@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>    
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>GoldIngot</SubtypeId>
+      </Id>
+      <DisplayName>Gold Ingot</DisplayName>
+      <Public>true</Public>
+      <Icon>Textures\GUI\Icons\Ingots\gold_ingot_improved.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Model>Models\Ingots\gold_ingot_improved.mwm</Model>
+      <PhysicalMaterial>Gold</PhysicalMaterial>
+      <Mass>1</Mass>
+      <Volume>0.25</Volume>
+	  <CanSpawnFromScreen>true</CanSpawnFromScreen>
+      <MaxStackAmount>10</MaxStackAmount>
+      <Health>20</Health>
+    </Component>
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>SilverIngot</SubtypeId>
+      </Id>
+      <DisplayName>Silver Ingot</DisplayName>
+      <Public>true</Public>
+      <Icon>Textures\GUI\Icons\Ingots\silver_ingot_improved.dds</Icon>
+      <Size>
+        <X>0.2</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Model>Models\Ingots\silver_ingot_improved.mwm</Model>
+      <PhysicalMaterial>Silver</PhysicalMaterial>
+      <Mass>0.5</Mass>
+      <Volume>0.25</Volume>
+	  <CanSpawnFromScreen>true</CanSpawnFromScreen>
+      <MaxStackAmount>10</MaxStackAmount>
+      <Health>50</Health>
+    </Component>
+  </Components>
+</Definitions>
