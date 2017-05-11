@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Definition xsi:type="MyObjectBuilder_InventoryComponentDefinition">
     <Id>
       <TypeId>MyObjectBuilder_Inventory</TypeId>
@@ -8,11 +8,11 @@
     <MaxItemCount>24</MaxItemCount>
     <MultiplierEnabled>false</MultiplierEnabled>
     <InputConstraint Whitelist="true">
-	  
+
 	  <Entry Type="MyObjectBuilder_Component" Subtype="IronIngot" />
 	  <Entry Type="MyObjectBuilder_Component" Subtype="GoldIngot" />
 	  <Entry Type="MyObjectBuilder_Component" Subtype="SilverIngot" />
-	  
-    </InputConstraint> 
+
+    </InputConstraint>
   </Definition>
 </Definitions>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Volume 64 = 1 dirt -->
+
+  <Definition xsi:type="MyObjectBuilder_VoxelMiningDefinition">
+    <Id>
+      <TypeId>VoxelMiningDefinition</TypeId>
+      <SubtypeId>Shovel</SubtypeId>
+    </Id>
+    <!-- GRASS -->
+    <Entry VoxelMaterial="Grass">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Grass_02">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Rocks_grass" Volume="128">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+      <MinedItem Type="InventoryItem" Subtype="StoneOreSmall" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Grass_old">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- FOREST -->
+    <Entry VoxelMaterial="Woods">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Woods_grass">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Woods_needles">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- DIRT -->
+    <Entry VoxelMaterial="Soil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="PlowedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="PlantedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="ExhaustedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- ORE -->
+    <Entry VoxelMaterial="IronOre_PoorYield" Volume="256">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="3" />
+      <MinedItem Type="InventoryItem" Subtype="IronOre" Amount="1" />
+    </Entry>
+
+    <!-- DayDot -->
+    <Entry VoxelMaterial="Cobble" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="StoneOreSmall" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Clay" Volume="64">
+      <MinedItem Type="Component" Subtype="ClayOre" Amount="1" />
+    </Entry>
+
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_VoxelMiningDefinition">
+    <Id>
+      <TypeId>VoxelMiningDefinition</TypeId>
+      <SubtypeId>Pickaxe</SubtypeId>
+    </Id>
+    <!-- ROCKS_GRASS -->
+    <Entry VoxelMaterial="Rocks_grass" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+      <MinedItem Type="InventoryItem" Subtype="StoneOreSmall" Amount="1" />
+    </Entry>
+
+    <!-- STONE -->
+    <Entry VoxelMaterial="Stone" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="LargeStone" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Stone_02" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="LargeStone" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Rocks_moss" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="LargeStone" Amount="1" />
+    </Entry>
+
+    <!-- IRON ORE -->
+    <Entry VoxelMaterial="IronOre_RichYield" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="IronOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="IronOre_RegularYield" Volume="128">
+      <MinedItem Type="InventoryItem" Subtype="LargeStone" Amount="1" />
+      <MinedItem Type="InventoryItem" Subtype="IronOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="IronOre_PoorYield" Volume="256">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="3" />
+      <MinedItem Type="InventoryItem" Subtype="IronOre" Amount="1" />
+    </Entry>
+
+    <!-- GRASS -->
+    <Entry VoxelMaterial="Grass">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Grass_02">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Rocks_grass" Volume="128">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+      <MinedItem Type="InventoryItem" Subtype="StoneOreSmall" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Grass_old">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- FOREST -->
+    <Entry VoxelMaterial="Woods">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Woods_grass">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Woods_needles">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- DIRT -->
+    <Entry VoxelMaterial="Soil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="PlowedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="PlantedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="ExhaustedSoil">
+      <MinedItem Type="InventoryItem" Subtype="Dirt" Amount="1" />
+    </Entry>
+
+    <!-- DayDot -->
+    <Entry VoxelMaterial="Cobble" Volume="64">
+      <MinedItem Type="InventoryItem" Subtype="StoneOreSmall" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Clay" Volume="64">
+      <MinedItem Type="Component" Subtype="ClayOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Gold" Volume="64">
+      <MinedItem Type="Component" Subtype="GoldOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Silver" Volume="64">
+      <MinedItem Type="Component" Subtype="SilverOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Silver" Volume="64">
+      <MinedItem Type="Component" Subtype="SilverOre" Amount="1" />
+    </Entry>
+    <Entry VoxelMaterial="Coal" Volume="64">
+      <MinedItem Type="Component" Subtype="CoalOre" Amount="1" />
+    </Entry>
+
+  </Definition>
+</Definitions>

@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Components>    
+  <Components>
     <Component>
       <Id>
         <TypeId>Component</TypeId>
         <SubtypeId>GoldIngot</SubtypeId>
       </Id>
+      <Tag>Ingot</Tag>
+      <Tag>IngotGold</Tag>
       <DisplayName>Gold Ingot</DisplayName>
       <Public>true</Public>
       <Icon>Textures\GUI\Icons\Ingots\gold_ingot_improved.dds</Icon>
@@ -27,6 +29,8 @@
         <TypeId>Component</TypeId>
         <SubtypeId>SilverIngot</SubtypeId>
       </Id>
+      <Tag>Ingot</Tag>
+      <Tag>IngotSilver</Tag>
       <DisplayName>Silver Ingot</DisplayName>
       <Public>true</Public>
       <Icon>Textures\GUI\Icons\Ingots\silver_ingot_improved.dds</Icon>
