@@ -35,7 +35,7 @@
       <DisplayName>Bake Clay into Bricks</DisplayName>
       <Category>Smelting</Category>
       <Prerequisites>
-        <Item Amount="20" Type="Component" Subtype="ClayOre" />
+        <Item Amount="5" Type="Component" Subtype="ClayOre" />
       </Prerequisites>
       <Results>
         <Item Amount="1" Type="Component" Subtype="ClayBrick" />
