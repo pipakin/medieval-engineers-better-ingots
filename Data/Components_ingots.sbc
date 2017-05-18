@@ -1,5 +1,33 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_ItemTagDefinition">
+    <Id Type="ItemTagDefinition" Subtype="IngotSteel"/>
+    <DisplayName>Steel Ingot</DisplayName>
+    <Description>Steel is an alloy of iron and other elements, primarily carbon,
+that is widely used in construction and other applications because
+of its high tensile strength and low cost.</Description>
+    <Icon>Textures\GUI\Icons\Ingots\steel_ingot_improved.dds</Icon>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_InventoryItemDefinition">
+    <Id Type="InventoryItem" Subtype="SteelIngot" />
+    <Tag>Ingot</Tag>
+    <Tag>IngotSteel</Tag>
+    <DisplayName>Steel Ingot</DisplayName>
+    <Description>Steel is an alloy of iron and other elements, primarily carbon,
+that is widely used in construction and other applications because
+of its high tensile strength and low cost.</Description>
+    <Icon>Textures\GUI\Icons\Ingots\steel_ingot_improved.dds</Icon>
+    <Size>
+      <X>0.25</X>
+      <Y>0.25</Y>
+      <Z>0.25</Z>
+    </Size>
+    <Mass>2</Mass>
+    <Model>Models\Ingots\steel_ingot.mwm</Model>
+    <MaxStackAmount>15</MaxStackAmount>
+    <Health>52</Health>
+  </Definition>
   <Components>
     <Component>
       <Id>

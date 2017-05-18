@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="SteelShovel"/>
+
+    <!-- Display -->
+    <DisplayName>Steel Shovel</DisplayName>
+    <Description>Description_Tool_IronShovel</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\IronShovel.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Mass>0.5</Mass>
+    <Model>Models\Weapons\IronShovel.mwm</Model>
+
+    <PhysicalMaterial>IronShovel</PhysicalMaterial>
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid"/>
+
+    <MaxDurability>90000</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+      <Slot>OffHand</Slot>
+    </Position>
+
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_DiggerToolBehaviorDefinition" Subtype="SteelShovel"/>
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_DiggerToolBehaviorDefinition">
+    <Id Type="DiggerToolBehaviorDefinition" Subtype="SteelShovel"/>
+
+    <YieldMultiplier>1.0</YieldMultiplier>
+    <TargettingDistance>3</TargettingDistance>
+    <MiningRadius>0.5</MiningRadius>
+    <Mining Type="MyObjectBuilder_VoxelMiningDefinition" Subtype="Shovel"/>
+
+    <SourceItem Type="InventoryItem" Subtype="Dirt"/>
+    <FillMaterial>Soil</FillMaterial>
+    <FillRadius>0.5</FillRadius>
+
+    <DirtId Type="MyObjectBuilder_VoxelMaterialDefinition" Subtype="Dirt"/>
+    <FillVolume>64</FillVolume>
+
+    <PrimaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1.151</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>Digging</Animation>
+    </PrimaryEffect>
+
+    <SecondaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1.151</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>Filling</Animation>
+    </SecondaryEffect>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_DiggerToolBehaviorDefinition">
+    <Id Type="DiggerToolBehaviorDefinition" Subtype="ShovelCombat"/>
+    <Efficiency>1</Efficiency>
+    <YieldMultiplier>0</YieldMultiplier>
+
+    <PrimaryEffect>
+      <MainHandAnimation>Attack</MainHandAnimation>
+    </PrimaryEffect>
+  </Definition>
+</Definitions>

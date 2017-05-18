@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="SteelSword"/>
+
+    <!-- Display -->
+
+    <DisplayName>Steel Sword</DisplayName>
+    <Description>Description_Weapon_Sword</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\IronSword.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Mass>0.5</Mass>
+    <Model>Models\Weapons\Sword.mwm</Model>
+
+    <PhysicalMaterial>Sword</PhysicalMaterial>
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <MaxDurability>100000</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+
+    <!-- Behaviors -->
+    <StanceToBehavior>
+      <StanceName>CombatMode</StanceName>
+      <BehaviorId Type="MeleeWeaponBehaviorDefinition" Subtype="SteelSword"/>
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_MeleeWeaponBehaviorDefinition">
+    <Id Type="MeleeWeaponBehaviorDefinition" Subtype="SteelSword"/>
+
+    <LeftSwing>
+      <Range>1.8</Range>
+      <Damage>50</Damage>
+      <Arc>30</Arc>
+
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Animation>Attack</Animation>
+      <Sound>Swing</Sound>
+    </LeftSwing>
+
+    <RightSwing>
+      <Range>1.8</Range>
+      <Damage>50</Damage>
+      <Arc>30</Arc>
+
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Animation>Attack</Animation>
+      <Sound>Swing</Sound>
+    </RightSwing>
+
+    <ForwardSwing>
+      <Range>1.8</Range>
+      <Damage>50</Damage>
+      <Arc>30</Arc>
+
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Animation>Attack</Animation>
+      <Sound>Swing</Sound>
+    </ForwardSwing>
+
+    <CanBlock>true</CanBlock>
+
+    <BlockAnimation>block_idle</BlockAnimation>
+    <BlockRaiseTime>.1</BlockRaiseTime>
+  </Definition>
+</Definitions>

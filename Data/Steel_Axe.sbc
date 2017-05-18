@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="SteelAxe"/>
+
+    <!-- Display -->
+
+    <DisplayName>Steel Axe</DisplayName>
+    <Description>Description_Tool_IronAxe</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\IronAxe.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Mass>0.5</Mass>
+    <Model>Models\Weapons\Axe_OneHand.mwm</Model>
+
+    <PhysicalMaterial>Axe</PhysicalMaterial>
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid"/>
+
+    <MaxDurability>100000</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_TreeCutterToolBehaviorDefinition" Subtype="AxeSteel"/>
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_TreeCutterToolBehaviorDefinition">
+    <Id Type="TreeCutterToolBehaviorDefinition" Subtype="AxeSteel"/>
+    <Efficiency>1</Efficiency>
+
+    <PrimaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>Cutting</Animation>
+    </PrimaryEffect>
+
+    <PrimaryLogEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>CuttingLog</Animation>
+    </PrimaryLogEffect>
+  </Definition>
+</Definitions>

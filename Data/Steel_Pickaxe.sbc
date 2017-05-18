@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_HandItemDefinition">
+    <Id Type="HandItem" Subtype="SteelPickaxe"/>
+
+    <!-- Display -->
+    <DisplayName>Steel Pickaxe</DisplayName>
+    <Description>Description_Tool_Pickaxe</Description>
+    <Icon>Textures\GUI\Icons\ToolsAndWeapons\IronPickaxe.dds</Icon>
+    <Size>
+      <X>1.2</X>
+      <Y>0.6</Y>
+      <Z>0.3</Z>
+    </Size>
+    <Mass>0.5</Mass>
+    <Model>Models\Weapons\PickAxe_OneHand.mwm</Model>
+
+    <PhysicalMaterial>PickAxe</PhysicalMaterial>
+
+    <MaxStackAmount>1</MaxStackAmount>
+
+    <!-- Equipment -->
+    <BearerDefinition Type="MyObjectBuilder_EntityEquipmentComponent" Subtype="Humanoid"/>
+
+    <MaxDurability>100000</MaxDurability>
+
+    <Position>
+      <Slot>MainHand</Slot>
+    </Position>
+
+    <Position>
+      <Slot>OffHand</Slot>
+    </Position>
+
+    <!-- Behavior -->
+    <StanceToBehavior>
+      <StanceName>NormalMode</StanceName>
+      <BehaviorId Type="MyObjectBuilder_MinerToolBehaviorDefinition" Subtype="PickaxeSteel"/>
+    </StanceToBehavior>
+  </Definition>
+
+  <Definition xsi:type="MyObjectBuilder_MinerToolBehaviorDefinition">
+    <Id Type="MinerToolBehaviorDefinition" Subtype="PickaxeSteel"/>
+    <Efficiency>6.6</Efficiency>
+    <YieldMultiplier>2.0</YieldMultiplier>
+    <MiningDistance>3</MiningDistance>
+    <MiningRadius>0.25</MiningRadius>
+    <Mining Type="MyObjectBuilder_VoxelMiningDefinition" Subtype="PickaxeSteel"/>
+
+    <PrimaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>Mining</Animation>
+    </PrimaryEffect>
+
+    <SecondaryEffect>
+      <HitTime>.6</HitTime>
+      <AnimationTime>1</AnimationTime>
+      <Sound>Swing</Sound>
+      <Animation>Attack</Animation>
+    </SecondaryEffect>
+  </Definition>
+</Definitions>

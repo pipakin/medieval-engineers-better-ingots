@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="MyObjectBuilder_CraftingRecipeDefinition">
+    <Id Type="MyObjectBuilder_CraftingRecipeDefinition" Subtype="IronIngotAndCoalToSteel"/>
+    <Icon>Textures\GUI\Icons\Ingots\steel_r.dds</Icon>
+    <Icon>Textures\GUI\Icons\SmeltIcon.dds</Icon>
+    <DisplayName>Create Steel Ingot from Iron and Coal</DisplayName>
+    <Category>Smelting</Category>
+    <Prerequisites>
+      <Item Amount="5" Tag="IngotIron" />
+      <Item Amount="2" Type="Component" Subtype="CoalOre" />
+    </Prerequisites>
+    <Results>
+      <Item Amount="1" Type="InventoryItem" Subtype="SteelIngot" />
+    </Results>
+    <CraftingTime Seconds="30"/>
+  </Definition>
+</Definitions>

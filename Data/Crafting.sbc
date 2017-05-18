@@ -42,4 +42,30 @@
       </Results>
       <CraftingTime Seconds="5"/>
     </Definition>
+
+    <Definition xsi:type="ResearchDefinition">
+      <Id Type="ResearchDefinition" Subtype="Hardening" />
+      <DisplayName>DisplayName_Research_Hardening</DisplayName>
+      <Entry Type="CraftingRecipeDefinition" Subtype="Sword" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="Hammer" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="IronAxe" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="Pickaxe" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="IronShovel" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="CrossbowQuiver" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="Crossbow" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="AxeSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="HammerSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="PickAxeSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="PlowSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="CrossbowQuiverSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="SwordSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="MaceSmelting" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="CrossbowSmelting" />
+
+      <Entry Type="CraftingRecipeDefinition" Subtype="SteelSword" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="SteelHammer" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="SteelAxe" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="SteelPickaxe" />
+      <Entry Type="CraftingRecipeDefinition" Subtype="SteelShovel" />
+    </Definition>
 </Definitions>
