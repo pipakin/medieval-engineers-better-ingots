@@ -42,7 +42,7 @@
   <Definition xsi:type="MyObjectBuilder_MinerToolBehaviorDefinition">
     <Id Type="MinerToolBehaviorDefinition" Subtype="PickaxeSteel"/>
     <Efficiency>6.6</Efficiency>
-    <YieldMultiplier>2.0</YieldMultiplier>
+    <YieldMultiplier>1.0</YieldMultiplier>
     <MiningDistance>3</MiningDistance>
     <MiningRadius>0.25</MiningRadius>
     <Mining Type="MyObjectBuilder_VoxelMiningDefinition" Subtype="PickaxeSteel"/>

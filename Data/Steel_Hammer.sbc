@@ -5,7 +5,7 @@
 
     <!-- Display -->
 
-    <DisplayName>DisplayName_Tool_Hammer</DisplayName>
+    <DisplayName>Steel Hammer</DisplayName>
     <Description>Description_Tool_Hammer</Description>
     <Icon>Textures\GUI\Icons\ToolsAndWeapons\HammerOneHand_Construction.dds</Icon>
     <Size>
